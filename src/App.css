@@ -1,38 +1,227 @@
-.App {
+body {
+  background-image: url("https://wallpapers.com/images/hd/black-galaxy-molten-rock-planet-yq9j0uxi7clsoebd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.continer {
+  background-color: transparent;
+  padding: 10px 5%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: #00e0ff;
+}
+
+.home {
+  padding: 150px 10%;
+  margin-top: 100px;
+}
+
+.home h3 {
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.home h1 {
+  font-size: 60px;
+  color: whitesmoke;
+}
+
+#About, #Roster, #Contact {
+  background-color: rgb(27, 27, 109);
+}
+
+.subabout {
+  display: flex;
+  gap: 30px;
+}
+
+.subabout img {
+  width: 50%;
+  border-radius: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text p {
+  font-size: 25px;
+  color: whitesmoke;
+}
+
+.text h2 {
   text-align: center;
+  text-decoration: underline;
+  color: #00Bfff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#Update {
+  text-align: center;
+  color: #00Bfff;
+  padding: 40px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.update1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card1{
+  width: 300px;
+  min-height: 350px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.card1:hover {
+  transform: translateY(-5px);
+}
+
+.update1 img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+.btn1{
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.btn1 a{
+  text-decoration: none;
+}
+
+.btn1:hover{
+  background-color: black;
+  color: red;
+}
+
+#Roster img {
+  width: 100%;
+}
+
+#Roster h1 {
+  color: #00Bfff;
+  text-align: center;
+}
+
+#Roster p {
+  color: whitesmoke;
+  font-size: 18px;
+  text-align: justify;
+  font-style: oblique;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 60px 10%;
+  color: #ffffff;
+}
+
+.contact1 {
+  flex: 1;
+  margin: 0 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact1 p {
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 15px 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info button {
+  width: 300px;
+  padding: 8px;
+  font-size: 17px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#Copy {
+  background-color: rgb(4, 4, 76);
+  color: #ffffff;
+  text-align: center;
+}
+
+.copy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+}
+
+.copy button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.copy img {
+  width: 25px;
 }
