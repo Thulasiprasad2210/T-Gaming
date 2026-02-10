@@ -3,12 +3,11 @@ import React from 'react'
 function Games() {
   return (
     <>
-
     <div className='continer'>
         <nav className='menu'>
           <img src='https://www.thiings.co/_next/image?url=https%3A%2F%2Flftz25oez4aqbxpq.public.blob.vercel-storage.com%2Fimage-lzuIEBk10XXfaTYgeEUGDNqgzZRPvZ.png&w=1000&q=75' alt="Gaming" width='70px' height="60px"/>
           <ul type="none">
-            <li><a href="/" className='link'>HOME</a></li>
+            <li><a href="#Home" className='link'>HOME</a></li>
             <li><a href="#About" className='link'>ABOUT</a></li>
             <li><a href="#Update" className='link'>UPDATE</a></li>
             <li><a href="#Roster" className='link'>ROSTER</a></li>
@@ -41,19 +40,19 @@ function Games() {
           <div className='card1'>
         <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/bo7/bo7-launch-blog/BO7-LAUNCH-TOUT.jpg" alt='COD'/>
         <p>Black Ops 7 is now live! Experience the brand-new Co-Op Campaign and its replayable Endgame, deploy across 18 Multiplayer maps, and brave the Dark Aether alongside the original crew in Round-Based Zombies.</p>
-        <button className='btn1'><a href="https://www.callofduty.com/blog/2025/11/call-of-duty-black-ops-7-live-worldwide-play-now" target='blank'>Update</a></button>
+        <button className='btn1'><a href="https://www.callofduty.com/blog/2025/11/call-of-duty-black-ops-7-live-worldwide-play-now" target="_blank" rel="noopener noreferrer">Update</a></button>
         </div>
 
         <div className='card1'>
         <img src='https://www.battlegroundsmobileindia.com/data/board/2/873/3_6_Web_banner.png' alt='BGMI'/>
         <p>The recent BGMI 4.1 update, released on November 13, 2025, adds the Frosty Funland winter theme, which includes snow-covered areas, new locations like Penguinville, and winter-themed items. Key features include new tactical gear like the Fish Rocket Launcher and Ice Gadgets, the A16 Royale Pass with winter rewards</p>
-        <button className='btn1'><a href="https://www.battlegroundsmobileindia.com/" target='blank'>Update</a></button>
+        <button className='btn1'><a href="https://www.battlegroundsmobileindia.com/" target="_blank" rel="noopener noreferrer">Update</a></button>
          </div>
 
          <div className='card1'>
-        <img src='https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/202510/2b7f6ab16cea03beecb929262825b2bd.jpg' alt='FFM'/>
+        <img src='https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/202210/75bbce47a03c336c3f40227c0dd28b54.jpg' alt='FFM'/>
         <p>Free Fire MAX has been upgraded to Unity 5, which could mean better graphics, smoother gameplay, and more stability. Also: a mic bug was reported on some devices, like the Motorola Edge 50 Fusion — players said their mic doesn’t work properly unless they adjust volume mid-match. </p>
-        <button className='btn1'><a href="https://ff.garena.com/en/" target='blank'>Update</a></button>
+        <button className='btn1'><a href="https://ff.garena.com/en/" target="_blank" rel="noopener noreferrer">Update</a></button>
         </div>
         </div>
       </div>
@@ -74,14 +73,14 @@ function Games() {
         </div>
         <div className='info'>
           <form>
-            <label for="">Name*</label> <br/>
-            <input type="text" placeholder='Enter Your FullName....'/><br/>
-            <label for="">Email*</label> <br/>
-            <input type="email" placeholder='Enter Your Email....'/><br/>
-            <label for="">Number*</label> <br/>
-            <input type="number" placeholder='Enter Your Number....'/>
+            <label htmlFor="name">Name*</label> <br/>
+            <input id="name" type="text" placeholder='Enter Your FullName....'/><br/>
+            <label htmlFor="email">Email*</label> <br/>
+            <input id="email" type="email" placeholder='Enter Your Email....'/><br/>
+            <label htmlFor="number">Number*</label> <br/>
+            <input id="number" type="number" placeholder='Enter Your Number....'/>
             <br/>
-            <label className='check'><input type="checkbox" />Yes, Subscribe me to newsletter. *</label><br/>
+            <p>Yes, Subscribe me to newsletter. *</p>
             <button>Submit</button>
           </form>
         </div>
@@ -89,18 +88,18 @@ function Games() {
       <hr/>
       <div id='Copy'>
         <footer className='copy'>
-            <p>&copy; Reserved by T-Gaming World. 2025</p>
+            <p>&copy; 2026 T-Gaming World. All rights reserved.</p>
             <button>
-            <a href="https://www.instagram.com/accounts/login/?hl=en" target='blank'><img src='https://cdn-icons-png.flaticon.com/128/1384/1384015.png' alt=''/></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" rel="noopener noreferrer"><img src='https://cdn-icons-png.flaticon.com/128/1384/1384015.png' alt=''/></a>
             </button>
             <button>
-            <a href="https://x.com/" target='blank'><img src='https://cdn-icons-png.flaticon.com/128/739/739257.png' alt=''/></a>  
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><img src='https://cdn-icons-png.flaticon.com/128/739/739257.png' alt=''/></a>  
             </button>
             <button>
-            <a href="https://www.google.com/?zx=1766555920036&no_sw_cr=1" target='blank'><img src='https://cdn-icons-png.flaticon.com/128/6244/6244710.png' alt=''/> </a>
+            <a href="https://www.google.com/?zx=1766555920036&no_sw_cr=1" target="_blank" rel="noopener noreferrer"><img src='https://cdn-icons-png.flaticon.com/128/6244/6244710.png' alt=''/> </a>
             </button>
             <button>
-            <a href="https://www.facebook.com/login/" target='blank'><img src='https://cdn-icons-png.flaticon.com/128/2168/2168281.png' alt=''/> </a>
+            <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer"><img src='https://cdn-icons-png.flaticon.com/128/2168/2168281.png' alt=''/> </a>
             </button>
           </footer>
       </div>

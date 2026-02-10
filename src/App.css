@@ -1,20 +1,42 @@
 body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("https://wallpapers.com/images/hd/black-galaxy-molten-rock-planet-yq9j0uxi7clsoebd.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 
 .continer {
-  background-color: transparent;
-  padding: 10px 5%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 4px 3%;
+  position: sticky; 
+  max-width: 1100px;
+  margin: 0 auto;
+  top: 0;
+  border-radius: 14px;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.menu .logo {
+  width: 56px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.menu img {
+  width: 56px;
+  height: 48px;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 
 .menu ul {
@@ -22,65 +44,114 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.menu li {
-  margin-left: 20px;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .link {
   text-decoration: none;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
   transition: 0.3s;
+  letter-spacing: 1px;
+  padding: 4px 4px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
 }
 
 .link:hover {
   color: #00e0ff;
+  text-shadow: 0 0 10px #00e0ff;
+}
+
+.link:focus-visible {
+  outline: 2px solid #00e0ff;
+  outline-offset: 2px;
 }
 
 .home {
-  padding: 150px 10%;
-  margin-top: 100px;
-}
-
-.home h3 {
-  font-size: 20px;
-  color: whitesmoke;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px;
+  margin-bottom: 0;
 }
 
 .home h1 {
   font-size: 60px;
   color: whitesmoke;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 10px black;
+  line-height: 1.1;
+}
+
+.home h3 {
+  font-size: 24px;
+  color: #00Bfff;
+  font-weight: 400;
+  text-shadow: 1px 1px 5px black;
+  margin: 0;
 }
 
 #About, #Roster, #Contact {
-  background-color: rgb(27, 27, 109);
+  background-color: rgba(27, 27, 109, 0.95); 
+  overflow: hidden;
+}
+
+#About {
+  color: #ffffff;
+  padding: 50px 5px;
+  padding-top: 0px;
+}
+
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .subabout {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 60px;
 }
 
 .subabout img {
-  width: 50%;
-  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00e5ff;
+  object-fit: cover;
 }
 
 .text {
-  flex: 1;
-}
-
-.text p {
-  font-size: 25px;
-  color: whitesmoke;
+  flex: 1 1 400px;
 }
 
 .text h2 {
-  text-align: center;
-  text-decoration: underline;
-  color: #00Bfff;
+  color: #00e5ff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #00e5ff;
+  display: inline-block;
+}
+
+.text p {
+  line-height: 1.8;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin: 0;
 }
 
 #Update {
@@ -95,6 +166,8 @@ body {
   justify-content: space-around;
   gap: 20px;
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card1{
@@ -110,6 +183,13 @@ body {
   align-items: center;
   justify-content: space-between;
   transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.card1 p{
+  color: #000000;
+  margin: 12px 0 0 0;
+  line-height: 1.5;
 }
 
 .card1:hover {
@@ -119,7 +199,8 @@ body {
 .update1 img {
   width: 100%;
   height: auto;
-  max-width: 300px;
+  max-width: 400px;
+  border-radius: 10px;
 }
 
 .btn1{
@@ -129,10 +210,12 @@ body {
   background-color: #007bff;
   color: white;
   cursor: pointer;
+  margin-top: 16px;
 }
 
 .btn1 a{
   text-decoration: none;
+  color: inherit;
 }
 
 .btn1:hover{
@@ -140,20 +223,53 @@ body {
   color: red;
 }
 
-#Roster img {
-  width: 100%;
+#Roster {
+  padding: 60px 0;
+  background-color: rgb(20, 20, 80);
 }
 
-#Roster h1 {
-  color: #00Bfff;
+.roster1 {
+  max-width: 1000px;
+  margin: 0 auto;
   text-align: center;
+  padding: 20px;
 }
 
-#Roster p {
+.roster1 img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.roster-text h1 {
+  color: #00Bfff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.roster1 h1 {
+  color: #00Bfff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.roster-text p {
   color: whitesmoke;
-  font-size: 18px;
-  text-align: justify;
-  font-style: oblique;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+.roster1 p {
+  color: whitesmoke;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
 }
 
 .contact-container {
@@ -162,6 +278,14 @@ body {
   background-color: #000000;
   padding: 60px 10%;
   color: #ffffff;
+}
+
+#Contact {
+  padding: 60px 10%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
 }
 
 .contact1 {
@@ -174,6 +298,7 @@ body {
 .contact1 p {
   line-height: 1.8;
   color: #e0e0e0;
+  margin: 0;
 }
 
 input {
@@ -191,6 +316,22 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
+}
+
+.info form {
+  width: 100%;
+  max-width: 420px;
+}
+
+.info label {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.info p {
+  margin: 16px 0 0 0;
+  color: #e0e0e0;
 }
 
 .info button {
@@ -206,13 +347,24 @@ input {
   background-color: rgb(4, 4, 76);
   color: #ffffff;
   text-align: center;
+  padding: 10px 15px;
+  margin-top: 0;
 }
 
 .copy {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 5px;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.copy p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 0;
 }
 
 .copy button {
@@ -220,8 +372,154 @@ input {
   border: none;
   cursor: pointer;
   border-radius: 50%;
+  padding: 6px;
 }
 
 .copy img {
-  width: 25px;
+  width: 22px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    padding: 6px 0;
+  }
+  
+  .menu ul {
+    margin-top: 15px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu li {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .home {
+    padding: 40px 20px;
+  }
+
+  .home h1 {
+    font-size: 36px;
+  }
+
+  .home h3 {
+    font-size: 18px;
+  }
+  
+  .subabout {
+    flex-direction: column;
+  }
+
+  .subabout img {
+    max-width: 100%;
+  }
+
+  .update1 {
+    padding: 20px 15px;
+  }
+
+  .card1 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #Contact {
+    padding: 40px 15px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contact1 h1 {
+    font-size: 1.75rem;
+  }
+
+  .info {
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .info input {
+    max-width: 100%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  #Copy {
+    padding: 10px 15px;
+  }
+
+  .copy {
+    padding: 0 10px;
+  }
+
+  .copy p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .continer {
+    padding: 4px 3%;
+    max-width: none;
+    border-radius: 0;
+  }
+
+  .menu ul {
+    gap: 10px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+
+  .home h1 {
+    font-size: 28px;
+  }
+
+  .home h3 {
+    font-size: 16px;
+  }
+
+  #About {
+    padding: 40px 15px;
+  }
+
+  .text h2 {
+    font-size: 1.75rem;
+  }
+
+  .text p {
+    font-size: 0.95rem;
+  }
+
+  #Roster {
+    padding: 40px 15px;
+  }
+
+  .roster1 p {
+    font-size: 16px;
+  }
+
+  .info button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .copy p {
+    font-size: 14px;
+  }
 }
